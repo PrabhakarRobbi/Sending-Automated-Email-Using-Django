@@ -1,0 +1,38 @@
+body{
+    background-image: url(https://c0.wallpaperflare.com/preview/455/930/443/black-nail-varnish-minimal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.container h1
+{
+    font-size: 150px;
+    margin-top: 100px;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+.container p
+{
+    color:rgb(19, 132, 231);
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    font-size: 220%;
+    margin-top: 80px;   
+}
+.container a .btn
+{
+    margin-left: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: x-large;
+    background-color: brown;
+    color: azure;
+    font-weight:bold;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.container a .btn:hover
+{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.8);
+}

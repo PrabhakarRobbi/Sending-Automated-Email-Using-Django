@@ -1,0 +1,394 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>LevelUp</title>
+    <script src="https://kit.fontawesome.com/814d8a54eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/pro.css' %}">
+    <script src="{% static 'js/valid.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkalami&family=Baloo+2&family=Inter&family=Libre+Baskerville:ital@1&family=Nunito:wght@300;400&family=Open+Sans&family=Roboto+Slab:wght@300;500&family=Rubik:ital,wght@1,300&family=Ubuntu:wght@300&display=swap');
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .has-bg-img .container-xl
+    {
+    background-image: url("{% static 'images/1.png'%}");
+    background-size: cover;
+    }
+    .bg4{
+      background-image: url("{% static 'images/2.png' %}");
+      background-size: cover;
+    }
+    .bg1{
+      background-image: url("{% static 'images/bg1.png' %}");
+      background-size: cover;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="">
+      <nav class="navbar navbar-expand-sm navbar-light sticky-top shadow alert alert-success">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#video">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#B">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#O">OverView</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Technologies
+              </a>
+              <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'level:Python' %}">Python</a>
+                <a class="dropdown-item" href="{% url 'level:Java' %}">Java</a>
+                <a class="dropdown-item" href="{% url 'level:Aws' %}">AWS</a>
+                <a class="dropdown-item" href="{% url 'level:Devops' %}">Devops</a>
+                <a class="dropdown-item" href="{% url 'level:Cloud' %}">Cloud Data</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="{% url 'level:register' %}">ContactUs</a>
+            </li>
+          </ul>
+          <img src="{% static 'images/Levelup1.png' %}" alt="">
+        </div>
+      </nav>
+       <!-- video -->
+      <div class="alert alert-info">
+        <br>
+        <div class="" id="video">
+          <center>
+            <div  class="embed-responsive embed-responsive-16by9 w-75">
+              <video autoplay controls loop>
+                  <source src="{% static 'images/video.mp4' %}" type="video/mp4" id="video">
+              </video>
+            </div>
+          </center>
+        </div>
+      </div>
+      <hr class="bg-danger w-50" id="">
+
+        <!-- section-1 -->
+      <div class="">
+        <h2 class="text-center text-info mb-5" style="position: sticky;top: 10; padding: 5px;" id="">Our <span class="text-dark font-weight-bolder">Services</span></h2>
+        <div id="bg1">
+          <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap About" >
+            <div class="card d-flex position-relative flex-column ml-5 mt-5 mb-5">
+              <div class="content-text"><h5 class="text-center pb-1 font-weight-bolder">CLASS TRAINING</h5></div>
+              <div class="content">
+                <p class="text-center">Quality Training by Experts of various Technoligies to suit aspirants from a different academic profile.</p>
+              </div>
+            </div>
+            <div class="card d-flex position-relative flex-column ml-5 mt-5 mb-5">
+              <div class='content-text'><h5 class="text-center mb-2 mt-1 pb-1 font-weight-bolder" >ONLINE TRAINING</h5></div>
+              <div class="content">
+                <p class="text-center">Experience Faculty team provides the training suitable for all aspiring IT Professional</p>
+              </div>
+            </div>
+            <div class="card d-flex position-relative flex-column ml-5 mt-5 mb-5">
+              <div class='content-text'><h5 class="text-center mb-4 mt-2 pb-2 font-weight-bolder">CORPORATE TRAINER</h5></div>
+              <div class="content">
+                <p class="text-center">Customized Courses to meet Client Requirements across the Sofware Industry.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <hr class="bg-danger w-50" id="#t">
+        <br>
+        <!-- section-2 -->
+      <div class="has-bg-img">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-center text-info mb-5" >Popular <span class="text-dark font-weight-bold">Technologies</span></h2>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <limyCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                  <!-- Wrapper for carou data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#sel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img-box"><img src="{% static 'images/python1.png' %}" alt="" class="img-fluid"></div><br>
+                    <p class="overview"><i class="fa-brands fa-python" style="color:black ;"></i><b>Python</b></p>
+                    <h5>click here --&#10095;<a href="{% url 'level:Python' %}">&nbsp;Python</a></h5>
+                    <p class="testimonial">The course teaches you the essential concepts of Python programming, and gives you an in-depth knowledge in data analytics, machine learning, data visualization, web scraping, and natural language processing. You will master the essential concepts of data types, tuples, lists, dicts, basic operators, and functions.</p>
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="img-box"><img src="{% static 'images/java1.png' %}" alt="" class="img-fluid"></div><br>
+                    <p class="overview"><i class="fa-brands fa-java" style="color:black ;"></i><b>Java</b></p>
+                    <h5>click here --&#10095;<a href="{% url 'level:Java' %}">&nbsp;Java</a></h5>
+                    <p class="testimonial">In this Salesforce training, you will learn how to configure Salesforce to collect, analyze, and retrieve vital customer information and create applications using Salesforce Lightning.</p>  
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="img-box"><img src="https://assets.intersystems.com/dims4/default/a9dad27/2147483647/strip/true/crop/780x422+0+0/resize/780x422!/quality/90/?url=http%3A%2F%2Finter-systems-brightspot.s3.amazonaws.com%2F26%2Fbd%2F6a6aa762425f87ad7d5c2fe65f8c%2Fawslogo-image.jpg" alt="" class="img-fluid"></div><br>
+                    <p class="overview"><i class="fa-brands fa-aws text-dark"></i><b> AWS</b></p>
+                    <h5>click here --&#10095;<a href="{% url 'level:Aws' %}">&nbsp;AWS</a></h5>
+                    <p class="testimonial">AWS Certified Cloud Practitioner is the entry-level certification for AWS professionals. It is designed to validate the overall understanding of the AWS cloud and Cloud Computing in general. Exam details: Prerequisites for this exam: 6 months of experience in working in the field of AWS is recommended.</p>  
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="img-box"><img src="{% static 'images/DevOps.png' %}" alt="" class="img-fluid"></div><br>
+                    <p class="overview"><b>Devops</b></p>
+                    <h5>click here --&#10095;<a href="{% url 'level:Devops' %}">&nbsp;Devops</a></h5>
+                    <p class="testimonial">The DevOps Foundation Program is designed to offer a real-world, practical understanding of continuous development and deployment, automation of configuration management, inter-team collaboration, & IT service agility. Learn DevOps tools like Git, Docker, Jenkins, Cucumber, Ansible, TeamCity, & Nagios.</p> 
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="img-box"><img src="https://www.delhicourses.in/blog/wp-content/uploads/2018/02/cloud-storage.png" alt="" class="img-fluid"></div><br>
+                    <p class="overview"><i class="fa-solid fa-cloud" style="color:black ;"></i><b>cloud data</b></p>
+                    <h5>click here --&#10095;<a href="{% url 'level:Cloud' %}">&nbsp;Cloud</a></h5>
+                    <p class="testimonial">Cloud computing classes cover a wide range of topics from cloud computing infrastructure to cloud management. Lessons may also touch on the tasks and responsibilities of a cloud engineer. Online courses for cloud computing range from beginner-level classes to more advanced options.</p>  
+                  </div>
+    
+                </div>
+                  <!-- Carousel controls -->
+                <a class="carousel-control-prev mt-5" href="#myCarousel" data-slide="prev">
+                  <i class="fa fa-angle-left" style="color:black ;"></i>
+                </a>
+                <a class="carousel-control-next mt-5" href="#myCarousel" data-slide="next">
+                  <i class="fa fa-angle-right" style="color:black ;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-danger w-50" id="#B">
+      <br>
+      <!-- section-3 -->
+      <div class="bg4"id="B">
+          <div class="container" >
+            <br>
+            <h2 class="text-center text-info mb-5 font-weight-bold" >Benefits </h2>
+            <div>
+              <h3 class="text-center text-danger">"Make your way down a Path and build specific skills <br> that will help you land  an amazing job....."</h3>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <div class="content"> 
+                  <a href="#">
+                    <div class="content-overlay"></div> 
+                      <img class="content-image border border-dark" src="{% static 'images/girl-image.jpg' %}">
+                      <div class="content-details fadeIn-bottom">
+                      <h4 class="content-title"><span class="text-white">ASSIGNMENTS</span></h4>
+                      <p class="content-text"><i class="fa fa-map-marker text-white"></i>LEVEL UP</p>
+                    </div>
+                  </a> 
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="content"> 
+                  <a href="#">
+                    <div class="content-overlay"></div> 
+                    <img class="content-image border border-dark" src="{% static 'images/certificate.jpg' %}">
+                    <div class="content-details fadeIn-bottom">
+                      <h4 class="content-title"><span class="text-white">COURSE CERTIFICATE</span></h4>
+                      <p class="content-text"><i class="fa-regular fa-clipboard text-white"></i>CERTIFICATE</p>
+                    </div>
+                  </a> 
+                </div>
+              </div>
+                  
+              <div class="col-md-3 mb-4">
+                <div class="content"> 
+                  <a href="#">
+                    <div class="content-overlay"></div> 
+                    <img class="content-image border border-dark" src="{% static 'images/inter.jpg' %}">
+                      <div class="content-details fadeIn-bottom">
+                        <h4 class="content-title"><span class="text-white">LERN WITH PROJECTS</span></h4>
+                        <p class="content-text"><i class="fa-regular fa-code text-white"></i> REAL TIME</p>
+                      </div>
+                  </a> 
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-4">
+                <div class="content"> 
+                  <a href="#">
+                    <div class="content-overlay"></div> 
+                    <img class="content-image border border-dark img-thumbnil" src="{% static 'images/6months.jpg' %}" id="">
+                    <div class="content-details fadeIn-bottom">
+                      <h4 class="content-title"><span class="text-white">6 MONTHS JOB SUPPORT</span></h4>
+                      <p class="content-text"><i class="fa-regular fa-handshake text-white"></i>ASSISTENCE</p>
+                    </div>
+                  </a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-danger w-50" id="#O">
+
+        <!-- section-4 -->
+        <div class="alert alert-info">
+          <br>
+          <h2 class="text-center text-info" id="O">Over<span class="text-dark font-weight-bold">View</span></h2>
+          <br><br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card alert alert-info w-100">
+                <div class=""> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="content">
+                    <p>
+                      Best place to learn.New Technologies.
+                      I personally think it's good the way it is.
+                    </p>
+                    <h3>Ayesha</h3>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card alert alert-info w-100">
+                <div class=""> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <div class="content">
+                    <p>
+                      Experienced Trainers , Well teaching Skills , Best place to Build career .  
+                    </p>
+                    <h3>P.Nandini</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card alert alert-info w-100">
+                <div class=""> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <div class="content">
+                    <p>
+                      Best place to learn.New Technologies. Conduct Mock Tests and Mock Interveiws.
+                    </p>
+                    <h3>Y. Lakshmi Bhavani</h3>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card alert alert-info w-100">
+                <div class=""> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="content">
+                    <p>Good infrastructure , Good Experienced Trainers best place to Learn Popular Technologies .</p>
+                    <h3>Sai kalyan</h3>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card alert alert-info w-100">
+                <div class=""> 
+                  <i class="fa-solid fa-star" ></i>
+                  <i class="fa-solid fa-star" ></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <div class="content">
+                    <p>No difficulties for me, I found everything was just right. Always had good feedback after handing in assessments . </p>
+                    <h3>K.Hemanth Kumar</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-danger w-50">
+        <div class="bg1">
+        <div class="container">
+        <footer class="mt-5">
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="{% static 'images/Levelup1.png' %}" alt="" class="w-50 mb-4"><br>
+              &nbsp; <p class="h6"> No 203, swathi manors,<br><span>near Aditya trade centre, Ameerpet, </span> <br> <span>Hyderabad- 500016 </span><br><span><i class="fa-regular fa-envelope"></i>&nbsp; info@levelupedu.net</span> <br><span><i class="fa-solid fa-phone"></i> 7893513xxx</span></p>
+            </div>
+            <div class="col-md-3">
+              <h5 class="h4">Courses</h5>
+              <p class="h6 lead" style="cursor:pointer ;">
+              PG in Cloud Data Engineering <br>
+              Master In DevOps <br>
+              Azure Data Engineering <br>
+              Azure DevOps <br>
+              Azure Admin <br>
+              AWS Data Specialist <br>
+              AWS DevOps <br>
+              AWS Admin <br>
+              Big Data on GCP <br>
+              GCP Admin & DevOps <br>
+              Docker & Kubernetes <br>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h5 class="h4">LevelUp</h5>
+              <p class="h6 lead" style="cursor:pointer ;">
+              <span id="top">Benefits</span> <br>
+              overview <br>
+              Technoligies <br>
+              ContactUs <br>
+              </p>
+              <h4 class="h4">FOLLOW US ON</h4>
+              <p class="font"><a href="https://www.facebook.com/cloudlevelup"><i class="fa-brands fa-facebook hover-primary" id="face" style="font-size:xx-large;"></i></a>&nbsp;&nbsp;<a href="https://www.instagram.com/levelupedu_trainings/"><i class="fa-brands fa-instagram" id="insta" style="font-size:xx-large;"></i></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UC2IToRmFodwLJz_fLg7n0OA/featured"><i class="fa-brands fa-youtube" id="tube" style="font-size:xx-large;"></i></a>&nbsp;&nbsp;  <a href=""><i class="fa-brands fa-linkedin" id="link" style="font-size:xx-large;"></i></a>&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-md-3">
+              <img src="{% static 'images/Levelup1.png' %}" alt="" class="w-75">
+            </div>
+          </div>
+        </footer>
+      </div>
+      <center>
+        <h6 style="font-weight: bold;" class="alert alert-info">Copyright &copy; 2022 All rights reserved</h3>
+      </center>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

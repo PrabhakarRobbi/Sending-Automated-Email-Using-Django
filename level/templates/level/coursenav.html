@@ -1,0 +1,99 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/814d8a54eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/python.css' %}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    .navbar .navbar-collapse img
+    {
+    max-width: 150px;
+    }
+    nav .collapse ul li a:hover{
+        text-decoration:underline;
+    }
+    i{
+        cursor: pointer;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top alert alert-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'level:Python' %}">Python<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'level:Java' %}">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'level:Devops' %}">Devops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'level:Aws' %}">AWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'level:Cloud' %}">Cloud Data</a>
+                </li>
+            </ul>
+            <img src="{% static 'images/Levelup1.png' %}" alt="">
+        </div>
+      </nav>
+      {% block nav %}
+
+      {% endblock nav %}
+
+      <div class="jumbotron">
+        <h1 class="text-center mb-5">Reach Us</h1>
+     <div class="container">
+        <div class="row">
+         <div class="col-md-4">
+             <i class="fa-solid fa-phone ml-5 pl-5  text-center" style="font-size: 100px;"></i>
+             <h1 class="ml-5 pl-4">CallUs</h1>
+             <p class="ml-4 pl-5">7893513124 / 9030725482</p>
+         </div>
+         <div class="col-md-4">
+             <i class="fa-solid fa-envelope ml-5 pl-5 text-center"style="font-size: 100px;"></i>
+             <h1 class="ml-5 pl-4">&nbsp;Mailus</h1>
+             <p class="ml-4 pl-5">info@levelupedu.net</p>
+         </div>
+         <div class="col-md-4">
+            <!-- &nbsp;&nbsp; -->
+             <i class="fa-solid fa-magnifying-glass-location ml-5 pl-5 text-center"style="font-size: 100px;"></i>
+             <h1 class="ml-5 pl-4">FindUs</h1>
+             <p class="ml-4 pl-4">Swathi Manor Apartment, Flat no 203, <br><span class="ml-4"> Ameerpet,Hyderabad - 500016</span></p>
+         </div>
+        </div>
+      </div>
+     </div>
+     {% block reach %}
+
+     {% endblock reach %}
+     <footer>
+        <center>
+            <h6 style="background-color: rgba(193, 231, 231, 0.932); font-weight: bold;">Copyright &copy; 2022 All rights reserved</h3>
+          </center>
+     </footer>
+     {% block foot %}
+
+     {% endblock foot%}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
